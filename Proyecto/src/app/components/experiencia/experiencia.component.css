@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+h1{
+    font-size: 3em;
+    color: #00e4b9;
+    text-align: center;
+
+}
+
+/*Cudros*/
+.container-card{
+	width: 100%;
+	display: flex;
+	max-width: 1400px;
+	margin: auto;
+}
+.title-cards{
+	width: 100%;
+	max-width: 1080px;
+	margin: auto;
+	padding: 20px;
+	margin-top: 20px;
+	text-align: center;
+	color: #71d7fb;
+}
+.carta{
+	width: 100%;
+	margin: 20px;
+	overflow: hidden;
+	transition: all 400ms ease-out;
+	cursor: default;
+
+
+   -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
+    --blue: #007bff;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #28a745;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+    --primary: #007bff;
+    --secondary: #6c757d;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    --dark: #343a40;
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+    --font-family-sans-serif: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    --font-family-monospace: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: left;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    color: #00e5b8;
+    font-family: 'Barlow', sans-serif;
+    font-size: 16px;
+    box-sizing: border-box;
+    background-image: linear-gradient(180deg, #313960 0%, #11152b 100%);
+    /*box-shadow: 0px 0px 0px 0px #849ef5;*/
+    padding: 40px 25px 30px 25px;
+    will-change: transform;
+    transition-timing-function: ease;
+    transition-duration: 0.1s;
+    transform-origin: center center;
+    transform-style: preserve-3d;
+    filter: blur(0px);
+    opacity: 1;
+    transform: perspective(1000px) translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+}
+.carta:hover{
+	box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+	transform: translateY(-3%);
+}
+.carta img{
+	width: 100%;
+	height: 210px;
+}
+.carta .contenido-card{
+	padding: 15px;
+	text-align: center;
+}
+.carta .contenido-card h3{
+	margin-bottom: 15px;
+	color: #71d7fb;
+}
+.carta .contenido-card p{
+	line-height: 1.8;
+	color: #b3cbe0;
+	font-size: 14px;
+	margin-bottom: 5px;
+}
+.carta .contenido-card a{
+	display: inline-block;
+	padding: 10px;
+	margin-top: 10px;
+	text-decoration: none;
+	color: #2fb4cc;
+	border: 1px solid #2fb4cc;
+	border-radius: 4px;
+	transition: all 400ms ease;
+	margin-bottom: 5px;
+}
+.carta .contenido-card a:hover{
+	background: #2fb4cc;
+	color: #fff;
+}
+@media only screen and (min-width:320px) and (max-width:768px){
+	.container-card{
+		flex-wrap: wrap;
+	}
+	.carta{
+		margin: 15px;
+	}
+}
+
+h3{ 
+    font-size: 20px;
+}
+
+.linea{
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
+    --blue: #007bff;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #28a745;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+    --primary: #007bff;
+    --secondary: #6c757d;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    --dark: #343a40;
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+    --font-family-sans-serif: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    --font-family-monospace: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: left;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    color: #b0c8dd;
+    font-family: 'Barlow', sans-serif;
+    font-size: 16px;
+    box-sizing: border-box;
+    display: inline-block;
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    height: 10px;
+    background-image: url(https://demo2.joomshaper.com/2019/folium//images/2019/10/23/video-divider.svg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}

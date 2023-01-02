@@ -1,0 +1,172 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;  
+    
+    
+    
+}
+
+html,body {
+    max-width: 100% !important;
+    overflow-x: hidden !important;
+}
+
+.sobreMi{
+ display: grid;
+ grid-template-columns: repeat(10,1fr);
+ /*width: 100vw;*/
+ align-items: center;
+}
+
+.sobreMi img{
+ width: 80%;
+ grid-column: 2/5
+}
+
+.info{
+ grid-column: 5/10;
+ padding: 3em;
+}
+
+.sobreMi h1{
+    font-size: 3em;
+    color: #00e4b9;
+}
+
+.sobreMi h2{
+    font-size: 2em;
+}
+
+.cuadro{
+
+    border: 2px solid #17a2b8;
+    padding: 10px;
+
+
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
+    --blue: #007bff;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #28a745;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+    --primary: #007bff;
+    --secondary: #6c757d;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    --dark: #343a40;
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+    --font-family-sans-serif: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    --font-family-monospace: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: left;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    color: #b0c8dd;
+    font-family: 'Barlow', sans-serif;
+
+    font-size: 1.5em;
+
+    box-sizing: border-box;
+    animation-fill-mode: both;
+    background-image: linear-gradient(193deg, #313960 0%, #11152b 100%);
+    box-shadow: 0 0 0 0 #ffffff;
+    padding-top: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    visibility: visible;
+    animation-duration: 600ms;
+    animation-delay: 500ms;
+    animation-name: fadeIn;
+}
+
+.tipeo{
+    display: block;
+    white-space: nowrap;
+    border-right: 4px solid;
+    width: 18ch;
+
+    animation: typing 2s steps(18),
+    blink .5s infinite step-end alternate;
+
+    overflow: hidden;
+}
+
+@keyframes typing{
+    from { width: 0;}
+}
+
+@keyframes blink{
+
+    50% {border-color: transparent;}
+    
+}
+
+@media screen and (max-width: 800px){ 
+
+    .sobreMi{
+        display: flex;
+        padding: 40px;
+        flex-direction: column-reverse;
+       
+    }
+
+ }
+
+ .boton{
+    position: relative;
+    background-color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    font-weight: 400;
+    padding: 10px 30px;
+    transition: 0.5s;
+
+}
+
+.boton:hover{
+    background: var(--clr);
+    
+    box-shadow: 0 0 20px var(--clr);
+}
+
+.boton:before{
+
+    content: '';
+    position: absolute;
+    inset: 2px;
+    background:  #111529;
+
+}
+
+.boton span{
+    color: #00e5b8; ;
+    position: relative;
+    z-index: 1;
+}
+
+.boton span:hover{
+    color: rgb(30, 255, 0);
+}
+
+

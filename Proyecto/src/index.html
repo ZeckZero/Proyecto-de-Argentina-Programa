@@ -6,9 +6,58 @@
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com"
+   crossorigin><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+
 </head>
+
+
 <body>
-  <h1>Bienvenidos</h1>
-  <app-root></app-root>
+ <header>
+  
+
+  <a href="#" class="logo"><i class="ri-home-heart-fill"></i><span>#AP</span></i></a>
+
+  <ul class="navbar">
+    <li><a href="#" class="active">Inicio</a></li>
+    <li><a href="#">Acerca de</a></li>
+    <li><a href="#">Experiencia</a></li>
+    <li><a href="#">Habilidades</a></li>
+    <li><a href="#">Contacto</a></li>
+  </ul>
+
+  <div class="main">
+    <a href="#" class="user"><i class="ri-user-fill"></i>Ingresar</a>
+    <a href="#">Registrarse</a>
+
+    <div class="bx bx-menu" id="menu-icon"></div>
+  </div>
+ </header>
+
+
+  <script>let menu = document.querySelector('#menu-icon');
+    let navbar = document.querySelector('.navbar');
+    
+    menu.onclick = () => {
+      menu.classList.toggle('bx-x');
+      navbar.classList.toggle('open');
+    };
+    
+  window.addEventListener("scroll", function(){
+  var header = document.querySelector("header");
+  header.classList.toggle("sticky", window.scrollY > 0);
+  })
+  
+
+ </script>
+    
+
+ <app-root></app-root>
 </body>
+
 </html>
