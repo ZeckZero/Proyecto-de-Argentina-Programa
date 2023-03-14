@@ -3,11 +3,16 @@
   <main class="main">
    <div class="info">
     
-   
+
+      <button type="button" class="btn btn-dark" routerLink="/edithead/1" *ngIf="isLogged">
+          Editar Persona
+      </button>
+
 
      <h1 class="titulo">Hola!</h1>
-     <h1>Me llamo <span>{{persona.nombre}} {{persona.apellido}}</span></h1>
+     <h1>Me llamo <span>      {{persona === null ? '' : persona.nombre}} {{persona === null ? '' : persona.apellido}} </span></h1>
      <h3 class="info-sub"><br>"Programador web Full Stack"</h3>
+     
 
      <div class="info-social">
      <i class="instagram">IG</i>  
@@ -20,20 +25,22 @@
      <p class="info-p">
       
       <span>Informacion sobre mi:</span>
-      Soy de Argentina (Buenos Aires), tengo actualmente 22 años, me dedico a trabajar y estudiar,
-       mi profesion es ser Programador web y Diseñador grafico, este es mi portafolio web como parte 
-       del proyecto final del #ArgentinaPrograma, espero que les guste.
+      {{persona === null ? '' : persona.descripcion}}
      </p>
+ 
+     
 
      <br>
      <br>
-     <a class="boton" href="#" style="--clr:rgb(0, 255, 55)"> <span>Descargar CV</span> </a>
-
+     
+   
    </div>
-
-   <img class="ovi" src="../../../assets/Burbuja.png">
+   <img [attr.src]="persona === null ? '' : persona.img" class="img-fluid fotoDePerfil"> 
 
   </main>
+
+
+
 
  
   
@@ -41,4 +48,3 @@
 
  
 </section>
- 
