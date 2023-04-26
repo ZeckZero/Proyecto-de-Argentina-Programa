@@ -9,7 +9,7 @@ import { environment } from 'src/environments/environment';
 })
 export class EducacionService {
 
-  authURL = 'https://frontend-ovi.web.app/educacion/';
+  //authURL = 'https://frontend-ovi.web.app/educacion/';
 
   URL = environment.URL + 'educacion/';
 

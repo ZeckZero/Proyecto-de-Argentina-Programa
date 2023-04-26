@@ -11,7 +11,7 @@ import { environment } from 'src/environments/environment';
 export class PersonaService {
   
   
-  authURL = 'https://frontend-ovi.web.app/personas/';
+  //authURL = 'https://frontend-ovi.web.app/personas/';
 
   URL = environment.URL + 'personas/';
   

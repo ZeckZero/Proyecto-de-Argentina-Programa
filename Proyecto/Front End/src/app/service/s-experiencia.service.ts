@@ -10,7 +10,7 @@ import { environment } from 'src/environments/environment';
 export class SExperienciaService {
 
 
-  authURL = 'https://frontend-ovi.web.app/explab/';
+  //authURL = 'https://frontend-ovi.web.app/explab/';
 
   URL = environment.URL + 'explab/';
 

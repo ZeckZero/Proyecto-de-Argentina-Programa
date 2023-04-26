@@ -11,7 +11,7 @@ import { environment } from 'src/environments/environment';
 })
 export class AuthService {
 
-  authURL = 'https://frontend-ovi.web.app/auth/';
+  //authURL = 'https://frontend-ovi.web.app/auth/';
 
   URL = environment.URL + 'auth/';
 

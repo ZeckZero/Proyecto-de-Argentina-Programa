@@ -11,7 +11,7 @@ import { Skill } from '../model/skill';
 export class SkillService {
 
 
-  authURL = 'https://frontend-ovi.web.app/skill/';
+  //authURL = 'https://frontend-ovi.web.app/skill/';
 
   URL = environment.URL + 'skill/';
   
