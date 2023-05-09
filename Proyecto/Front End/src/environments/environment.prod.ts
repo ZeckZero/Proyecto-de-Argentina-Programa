@@ -1,4 +1,4 @@
 export const environment = {
   production: true,
-  URL: 'https://bakend-27ug.onrender.com/'
+  URL: 'backend-production-a5a3.up.railway.app'
 };
