@@ -15,7 +15,7 @@ export const environment = {
   },
 
   production: false,
-  URL: 'http://localhost:8080/'
+  URL: 'backend-production-a5a3.up.railway.app'
 };
 
 /*
